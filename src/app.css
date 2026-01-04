@@ -1,0 +1,108 @@
+@keyframes pop-up {
+    0%, 80% {
+        transform:translateY(0em);
+    }
+    90% {
+        transform:translateY(-0.5em) rotate(-6deg);
+    }
+    100% {
+        transform:translateY(0em);
+    }
+}
+
+@keyframes hand-bob {
+    0% {
+        transform:translateY(0em) rotate(5deg);
+    }
+    50% {
+        transform:translateY(-0.5em);
+    }
+    100% {
+        transform:translateY(0em) rotate(-2deg);
+    }
+}
+
+@keyframes hand-slap-left {
+    0% {
+        opacity: 10%;
+        transform:rotate(-20deg) translate(-0.1em, -2em);
+    }
+    80% {
+        transform:rotate(5deg) translate(0em, 0.2em);
+    }
+    100% {
+        
+    }
+}
+@keyframes hand-slap-right {
+    0% {
+        opacity: 10%;
+        transform:rotate(20deg) translate(0.1em, -2em);
+    }
+    80% {
+        transform:rotate(-5deg) translate(0em, 0.2em);
+    }
+    100% {
+        
+    }
+}
+
+@keyframes intensifies {
+    0% {
+        transform:rotate(-5deg) translateY(-0.1em);
+    }
+    100% {
+        transform:rotate(5deg) translateY(0.1em);
+    }
+}
+@keyframes winning{
+    0%{}
+    100%{
+        color:yellow;
+        font-size:3em;
+    }
+}
+@keyframes losing{
+    0%{}
+    100%{
+        color:red;
+        text-decoration: line-through;
+    }
+}
+@keyframes tieing{
+    0%{}
+    100%{
+        color:grey;
+    }
+}
+
+
+
+.animate-pop {
+    animation-name:pop-up;
+    animation-duration:500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.animate-hand-bob {
+    animation: hand-bob 0.6s ease-in-out infinite alternate-reverse;
+}
+.intensifies {
+    animation:intensifies 50ms alternate-reverse infinite;
+}
+.hand-slap-left {
+    animation: hand-slap-left 0.1s ease-in;
+}
+.hand-slap-right {
+    animation: hand-slap-right 0.1s ease-in;
+}
+.winning{
+    animation:wining 0.1s ease-in forwards;
+}
+.losing{
+    animation:losing 0.1s ease-in forwards;
+}
+.tieing{
+    animation:tieing 0.1s ease-in forwards;
+}
